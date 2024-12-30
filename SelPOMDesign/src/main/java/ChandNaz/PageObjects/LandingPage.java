@@ -11,7 +11,6 @@ public class LandingPage extends AbstractComponent {
 
 	WebDriver driver;
 	Actions act = new Actions(driver);
-	act.
 	public LandingPage(WebDriver driver) {	//In this class, this method is the first thing to execute. 
 		// Initialization
 		super(driver);
