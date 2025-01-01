@@ -25,7 +25,7 @@ public class SubmitOrderTestwithExcel extends BaseTest{
 		Boolean matchItem2 = cartpage.matchCartItems(prod2);
 		Assert.assertTrue(matchItem2);
 		PlaceOrderPage placeOrderPage = cartpage.clickOnCheckoutBtn();
-		placeOrderPage.selectCountry(cname);
+		placeOrderPage.selectCountry(cname);	//Country name changed in the Excel sheet
 		ConfirmPage pickupPage = placeOrderPage.clickOnPlaceOrder();
 		String confirmText = pickupPage.getConfirmationMessage();
 		Assert.assertTrue(confirmText.equalsIgnoreCase("THANKYOU FOR THE ORDER."));
