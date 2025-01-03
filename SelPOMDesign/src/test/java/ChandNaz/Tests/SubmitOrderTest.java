@@ -18,6 +18,7 @@ public class SubmitOrderTest extends BaseTest{
 	@Test(dataProvider="getData")
 	public void submitOrder(HashMap<String, String> input) throws IOException, InterruptedException
 	{	
+		//End-2-End Test started:
 		ProductPage productPage = loginPage.LoginApplication(input.get("email"), input.get("PW"));
 		List<WebElement> products = productPage.getListOfProducts();	//for future use only
 		productPage.addElementToCart(input.get("ProdName1")); 
