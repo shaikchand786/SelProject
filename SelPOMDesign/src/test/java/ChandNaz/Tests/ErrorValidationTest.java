@@ -13,7 +13,7 @@ public class ErrorValidationTest extends BaseTest{
 	public void LoginErrorValidation() throws IOException, InterruptedException
 	{
 		loginPage.LoginApplication("dummy78@gmail.com", "!T34567t");
-		Assert.assertEquals("Incorrect email password.",loginPage.getErrorMsg()); //message: "Incorrect email or password."
+		Assert.assertEquals("Incorrect email password....",loginPage.getErrorMsg()); //message: "Incorrect email or password."
 	}
 	
 	@Test
@@ -23,7 +23,7 @@ public class ErrorValidationTest extends BaseTest{
 //		List<WebElement> products = productPage.getListOfProducts();	//for future use
 		productPage.addElementToCart(ProdName1);
 		CartPage cartpage = productPage.clickOnCart();
-		Boolean matchItem1 = cartpage.matchCartItems("IPHONE 13 PRO MAX");
+		Boolean matchItem1 = cartpage.matchCartItems("IPHONE 13 PRO MAX....");
 		Assert.assertFalse(matchItem1);
 	}
 	
