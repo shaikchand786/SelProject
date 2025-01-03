@@ -19,7 +19,7 @@ public class SubmitOrderTest extends BaseTest{
 	public void submitOrder(HashMap<String, String> input) throws IOException, InterruptedException
 	{	
 		ProductPage productPage = loginPage.LoginApplication(input.get("email"), input.get("PW"));
-		List<WebElement> products = productPage.getListOfProducts();	//for future use
+		List<WebElement> products = productPage.getListOfProducts();	//for future
 		productPage.addElementToCart(input.get("ProdName1")); 
 		productPage.addElementToCart(input.get("ProdName2"));
 		CartPage cartpage = productPage.clickOnCart();
