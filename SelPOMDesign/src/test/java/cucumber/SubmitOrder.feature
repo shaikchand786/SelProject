@@ -5,7 +5,7 @@ Feature: Purchase the products from Rahul Shetty Academy website
 	Background:
 	Given I landed on Rahul Shetty Academy website
 		
-  @tag1
+  @Test1
   Scenario Outline: Positive scenario for submitting the order
     Given Loggedin with username <username> and password <password>
     When I add the product <productname> to cart
@@ -17,4 +17,3 @@ Feature: Purchase the products from Rahul Shetty Academy website
     Examples: 
       | username  					| password | productname  	|	countryname	|
       | dummy786@gmail.com 	| !T34567t | IPHONE 13 PRO 	|	India				|
-      | dummy321@gmail.com 	| !T34567t | IPHONE 14 PRO 	|	Austria			|
