@@ -17,3 +17,4 @@ Feature: Purchase the products from Rahul Shetty Academy website
     Examples: 
       | username  					| password | productname  	|	countryname	|
       | dummy786@gmail.com 	| !T34567t | IPHONE 13 PRO 	|	India				|
+      | dummy321@gmail.com 	| !T34567t | IPHONE 14 PRO 	|	Austria			|
